@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Picverse - Home</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" href="assets/images/logo.png">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="" class="navbar-logo">
+        <img src="/assets/images/logo.png" alt="Logo">
+        <div class="logo">Picverse</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="submission.html">Submit</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero">
+      <div class="hero-overlay">
+        <h1 class="slogan">Unleash Your Creativity</h1>
+        <p class="artist-name">Featuring artists like <span id="artist-name">Jane Doe</span></p>
+        <button id="explore-gallery-btn">
+            <a href="gallery.html">Explore Gallery</a>
+        </button>
+      </div>
+    </section>
+
+    <section id="trending-tags">
+      <h2>Top Trending Tags</h2>
+      <ul class="tags-list" aria-label="Top trending tags">
+        <li>#Fantasy</li>
+        <li>#SciFi</li>
+        <li>#DigitalArt</li>
+        <li>#Portrait</li>
+        <li>#Abstract</li>
+        <li>#ConceptArt</li>
+      </ul>
+    </section>
+
+    <section id="featured-artworks">
+      <h2>Featured Artworks</h2>
+      <div class="artworks-grid" id="artworksContainer"></div>
+    </section>
+    
+  </main>
+
+  <footer>
+    <p>© 2025 Picverse Community. All rights reserved.</p>
+  </footer>
+
+  <script src="js/index.js"></script>
+</body>
+</html>
