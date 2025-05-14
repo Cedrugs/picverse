@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Picverse - Submission</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">Picverse</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="submission.html" class="active">Submit</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="submission-form-section">
+      <h2>Submit Your Artwork</h2>
+
+      <form id="artwork-form" novalidate>
+        <label for="email">Email:</label><br />
+        <input type="email" id="email" name="email" required /><br />
+
+        <label for="title">Title:</label><br />
+        <input type="text" id="title" name="title" required minlength="3" /><br />
+
+        <label for="description">Description:</label><br />
+        <textarea id="description" name="description" rows="4" required></textarea><br />
+
+        <label for="tags">Tags (comma separated):</label><br />
+        <input type="text" id="tags" name="tags" required /><br />
+
+        <label for="file-upload">Upload File:</label><br />
+        <input type="file" id="file-upload" name="file-upload" accept="image/*" required /><br />
+
+        <fieldset>
+          <legend>Is this artwork AI-generated?</legend>
+          <input type="radio" id="ai-yes" name="ai-generated" value="yes" required />
+          <label for="ai-yes">Yes</label><br />
+
+          <input type="radio" id="ai-no" name="ai-generated" value="no" />
+          <label for="ai-no">No</label>
+        </fieldset>
+
+        <button type="submit">Submit Artwork</button>
+
+        <p id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Picverse Community. All rights reserved.</p>
+  </footer>
+
+  <script src="js/submission.js"></script>
+</body>
+</html>

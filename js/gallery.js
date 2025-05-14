@@ -1,165 +1,294 @@
 const tagsData = [
     {
-      tag: "Fantasy",
-      artworks: [
-        { title: "Enchanted Castle", artist: "Elyra Moon", description: "A magical fortress glowing in the night." },
-        { title: "Dragon's Lair", artist: "Kael Storm", description: "Hidden deep in a misty cave." },
-        { title: "Mystic Woods", artist: "Lira Fern", description: "A mysterious forest full of ancient secrets." },
-        { title: "Elf Archer", artist: "Thalen Wind", description: "A guardian watching the forest paths." },
-        { title: "Wizard Tower", artist: "Merin Blaze", description: "Home to ancient spells and knowledge." },
-        { title: "Fairy Garden", artist: "Selena Moonlight", description: "A magical place where fairies gather." },
-        { title: "Phoenix Rebirth", artist: "Rylan Blaze", description: "The legendary bird rising from the ashes." },
-        { title: "Ancient Temple", artist: "Dorian Shade", description: "A long-lost temple hidden in the jungle." },
-        { title: "Sword of Light", artist: "Aric Starblade", description: "A mystical sword glowing with pure energy." },
-        { title: "Celestial Queen", artist: "Aurora Skye", description: "The queen who reigns over the stars." },
-        { title: "Unicorn's Grace", artist: "Lyra Dreamweaver", description: "A pure creature galloping through the mist." },
-        { title: "Dragon Rider", artist: "Kaelen Stormrider", description: "A fearless hero soaring through the skies." },
-        { title: "Crystal Cavern", artist: "Eldrin Frost", description: "A glowing cave filled with priceless crystals." },
-        { title: "Forest of Shadows", artist: "Vera Darkwood", description: "A shadowy realm where danger lurks." },
-        { title: "Moonlit Lake", artist: "Selene Nightshade", description: "A serene lake illuminated by the moon." }
-      ]
+        tag: "Fantasy",
+        artworks: [
+        {
+            title: "Moonlit Vale",
+            artist: "Aria Stone",
+            description: "A serene valley bathed in moonlight.",
+            likes: "312k",
+            url: "fantasy_1.jpg"
+        },
+        {
+            title: "Crimson Blade",
+            artist: "Jax Vorn",
+            description: "A legendary sword with untold power.",
+            likes: "89.5k",
+            url: "fantasy_2.jpg"
+        },
+        {
+            title: "Celestial Grove",
+            artist: "Faye Moon",
+            description: "Trees radiant with magic under stars.",
+            likes: "158k",
+            url: "fantasy_3.jpg"
+        },
+        {
+            title: "Sorcerer's Peak",
+            artist: "Dax Eldrin",
+            description: "The highest point ruled by ancient wizards.",
+            likes: "422k",
+            url: "fantasy_4.jpg"
+        },
+        {
+            title: "Pixie Hollow",
+            artist: "Luna Breeze",
+            description: "A mystical home of playful pixies.",
+            likes: "97.7k",
+            url: "fantasy_5.jpg"
+        },
+        {
+            title: "Drake’s Flight",
+            artist: "Tess Gray",
+            description: "A dragon soaring above the mountains.",
+            likes: "274k",
+            url: "fantasy_6.jpg"
+        }
+        ]
     },
     {
-      tag: "SciFi",
-      artworks: [
-        { title: "Space Battle", artist: "Nova Jett", description: "Explosive action in deep space." },
-        { title: "Futuristic City", artist: "Zara Void", description: "Skyscrapers and hovercars galore." },
-        { title: "Robot Companion", artist: "Dex Core", description: "Your loyal assistant of the future." },
-        { title: "Alien Planet", artist: "Quinn Lux", description: "A bizarre world with floating islands." },
-        { title: "Cybernetic Soldier", artist: "Ryke Volt", description: "Enhanced for ultimate combat." },
-        { title: "Hovercar Chase", artist: "Kira Nova", description: "An intense chase through neon-lit streets." },
-        { title: "Android Overlord", artist: "Milo Forge", description: "The ultimate AI ruler." },
-        { title: "Galactic Explorer", artist: "Lina Starwind", description: "A lone explorer charting the stars." },
-        { title: "Virtual Reality Dream", artist: "Fenix Blue", description: "A simulation world that feels real." },
-        { title: "Neon Jungle", artist: "Rox Nova", description: "A dense jungle lit by neon lights." },
-        { title: "Robotic Uprising", artist: "Vera X", description: "A revolt of machines against their creators." },
-        { title: "Space Colony", artist: "Seth Orion", description: "A thriving human colony on a distant planet." },
-        { title: "Nano-Tech", artist: "Ira Cypher", description: "Revolutionary technology that changes everything." },
-        { title: "AI Revolution", artist: "Juno Code", description: "The rise of artificial intelligence." },
-        { title: "Astral War", artist: "Caden Black", description: "A war between galactic factions." }
-      ]
+        tag: "SciFi",
+        artworks: [
+        {
+            title: "Neon Grid",
+            artist: "Nova Cryx",
+            description: "Futuristic city glowing with neon lights.",
+            likes: "1.1m",
+            url: "sciFi_1.jpg"
+        },
+        {
+            title: "StarRunner",
+            artist: "Kai Zen",
+            description: "A sleek spaceship streaking through galaxies.",
+            likes: "420k",
+            url: "sciFi_2.jpg"
+        },
+        {
+            title: "Quantum Rift",
+            artist: "Lex Ray",
+            description: "A portal bridging dimensions unknown.",
+            likes: "305k",
+            url: "sciFi_3.jpg"
+        },
+        {
+            title: "Synth Wave",
+            artist: "Zara Vox",
+            description: "Cybernetic beats in a digital night.",
+            likes: "587k",
+            url: "sciFi_4.jpg"
+        },
+        {
+            title: "Alien Dawn",
+            artist: "Ryn Flux",
+            description: "An unknown world awakening to sunrise.",
+            likes: "219k",
+            url: "sciFi_5.jpg"
+        },
+        {
+            title: "Mech Vanguard",
+            artist: "Dex Volt",
+            description: "Robotic soldier guarding the frontier.",
+            likes: "635k",
+            url: "sciFi_6.jpg"
+        }
+        ]
     },
     {
-      tag: "Portrait",
-      artworks: [
-        { title: "Lady with Hat", artist: "Isabelle Noire", description: "A timeless portrait of elegance." },
-        { title: "Smiling Child", artist: "Milo Sketch", description: "Capturing joy in purest form." },
-        { title: "Old Man", artist: "Ella Paints", description: "A lifetime etched in his face." },
-        { title: "Girl in Blue", artist: "Lina Brush", description: "A calming presence in soft hues." },
-        { title: "Smoker", artist: "Jax Soot", description: "A moody and gritty atmosphere." },
-        { title: "Elegant Dancer", artist: "Ria Poise", description: "Grace in every move." },
-        { title: "The Thinker", artist: "Soren Ember", description: "A deep contemplation captured in a portrait." },
-        { title: "Sculpted Beauty", artist: "Marla Stone", description: "A portrait of beauty carved in time." },
-        { title: "Gentle Gaze", artist: "Amara Dawn", description: "Soft eyes that speak of kindness." },
-        { title: "Boy with Dog", artist: "Trey Ember", description: "A boy and his loyal companion, captured forever." },
-        { title: "Lady in Red", artist: "Chloe Illume", description: "A powerful portrait of strength and beauty." },
-        { title: "The Artist", artist: "Juno Masterson", description: "A self-portrait of a visionary artist." },
-        { title: "The Dreamer", artist: "Gage Harper", description: "A portrait of someone lost in thought." },
-        { title: "Mysterious Eyes", artist: "Dara Faye", description: "Eyes that hide untold secrets." },
-        { title: "Elder Wisdom", artist: "Theo Sage", description: "A portrait reflecting years of knowledge and experience." }
-      ]
-    },
-    {
-      tag: "Abstract",
-      artworks: [
-        { title: "Color Explosion", artist: "Vera Shine", description: "A burst of color blending into chaos." },
-        { title: "Deep Ocean", artist: "Elara Star", description: "Waves of blue that transcend the ocean." },
-        { title: "Fractured Reality", artist: "Xander Edge", description: "A fractured view of the world, disjointed and surreal." },
-        { title: "Geometric Flow", artist: "Blaze Forte", description: "Sharp lines flowing into impossible shapes." },
-        { title: "Electric Pulse", artist: "Luka Wave", description: "The pulse of electricity captured in light." },
-        { title: "Ethereal Mist", artist: "Sage Wind", description: "An intangible mist that defies form." },
-        { title: "Mirror of Souls", artist: "Rina Mirror", description: "A reflection of the human soul in vibrant colors." },
-        { title: "Timeless Motion", artist: "Iris Flux", description: "Time flowing in a circle of endless motion." },
-        { title: "Abstract Chaos", artist: "Milo Crash", description: "A chaotic dance of shapes and colors." },
-        { title: "Fractal Mind", artist: "Liora Maze", description: "Patterns within patterns within thoughts." },
-        { title: "Fluidity", artist: "Kai Ether", description: "The feeling of liquid motion captured in form." },
-        { title: "Vibration", artist: "Juno Echo", description: "Vibrations in space, sound waves visualized." },
-        { title: "Spectrum of Light", artist: "Oren Lux", description: "Light split into its purest form." },
-        { title: "Cosmic Dust", artist: "Astra Veil", description: "Tiny particles in space, swirling endlessly." },
-        { title: "Silent Universe", artist: "Nova Ember", description: "A quiet, infinite void in a world of stillness." }
-      ]
+        tag: "Portrait",
+        artworks: [
+        {
+            title: "Silent Gaze",
+            artist: "Ivy Cain",
+            description: "An intense look captured on canvas.",
+            likes: "210k",
+            url: "portrait_1.jpg"
+        },
+        {
+            title: "Golden Smile",
+            artist: "Max Reed",
+            description: "Joy expressed in warm golden tones.",
+            likes: "472k",
+            url: "portrait_2.jpg"
+        },
+        {
+            title: "Shaded Sight",
+            artist: "Zoe Fenn",
+            description: "A contemplative person in shadow.",
+            likes: "139k",
+            url: "portrait_3.jpg"
+        },
+        {
+            title: "Blue Aura",
+            artist: "Lia Walsh",
+            description: "A calm presence surrounded by blue hues.",
+            likes: "267k",
+            url: "portrait_4.jpg"
+        },
+        {
+            title: "Rust & Smoke",
+            artist: "Jax Soot",
+            description: "Moody portrait with gritty atmosphere.",
+            likes: "94.3k",
+            url: "portrait_5.jpg"
+        },
+        {
+            title: "Childhood Joy",
+            artist: "Mira Skye",
+            description: "Pure happiness frozen in time.",
+            likes: "389k",
+            url: "portrait_6.jpg"
+        }
+        ]
     },
     {
         tag: "Nature",
         artworks: [
-          { title: "Mountain Peaks", artist: "Kira Dawn", description: "Snow-capped mountains rising above the clouds." },
-          { title: "Sunset Over the Ocean", artist: "Luna Sky", description: "The sun dipping below the horizon, painting the sky with colors." },
-          { title: "Forest Trail", artist: "Finn Willow", description: "A peaceful path winding through the ancient forest." },
-          { title: "Wildflowers in Bloom", artist: "Cleo Petal", description: "A meadow bursting with vibrant wildflowers." },
-          { title: "River's Journey", artist: "Toby Creek", description: "A gentle river flowing through the landscape, kissed by the sun." },
-          { title: "Autumn Leaves", artist: "Maya Storm", description: "Golden leaves falling in a quiet autumn breeze." },
-          { title: "Desert Mirage", artist: "Rex Ember", description: "A shimmering illusion in the vast, arid desert." },
-          { title: "Tropical Paradise", artist: "Kai Coral", description: "A pristine beach surrounded by lush palm trees and crystal-clear waters." },
-          { title: "Snowfall in the Forest", artist: "Ava Frost", description: "Snow gently falling in a peaceful woodland." },
-          { title: "Night Sky", artist: "Orion Vale", description: "Stars twinkling in the vast, infinite night." },
-          { title: "The Big Redwood", artist: "Max Timber", description: "A towering redwood tree reaching to the heavens." },
-          { title: "Blossom Garden", artist: "Lily Fern", description: "A garden filled with delicate cherry blossoms in full bloom." },
-          { title: "Northern Lights", artist: "Zara Borealis", description: "A mesmerizing dance of colors across the arctic sky." },
-          { title: "The Calm Lake", artist: "Elise Waters", description: "A still, tranquil lake reflecting the beauty of the mountains around it." },
-          { title: "Canyon View", artist: "Theo Stone", description: "A breathtaking view of the canyon, bathed in golden sunlight." }
+            {
+                title: "Dawn Ridge",
+                artist: "Kira Elm",
+                description: "Sunrise brushing the mountain tops.",
+                likes: "680k",
+                url: "nature_1.jpg"
+            },
+            {
+                title: "Ocean Whisper",
+                artist: "Luna Sky",
+                description: "Gentle waves caress the shore in silence.",
+                likes: "973k",
+                url: "nature_2.jpg"
+            },
+            {
+                title: "Forest Glow",
+                artist: "Finn Moss",
+                description: "Light filtering through dense trees.",
+                likes: "412k",
+                url: "nature_3.jpg"
+            },
+            {
+                title: "Bloom Tide",
+                artist: "Cleo Petal",
+                description: "Wildflowers painting the hills with color.",
+                likes: "345k",
+                url: "nature_4.jpg"
+            },
+            {
+                title: "River’s Path",
+                artist: "Toby Creek",
+                description: "Water winding through lush landscapes.",
+                likes: "527k",
+                url: "nature_5.jpg"
+            },
+            {
+                title: "Amber Fall",
+                artist: "Maya Storm",
+                description: "Golden leaves drift through autumn air.",
+                likes: "285k",
+                url: "nature_6.jpg"
+            }
         ]
-      }
-  ];
-  
-  
-  const tagsContainer = document.getElementById('tagsContainer');
-  const modal = document.getElementById('artwork-modal');
-  const modalCloseBtn = document.getElementById('modal-close');
-  const modalImage = document.getElementById('modal-image');
-  const modalTitle = document.getElementById('modal-title');
-  const modalDesc = document.getElementById('modal-desc');
-  const modalArtist = document.getElementById('modal-artist');
-  
-  tagsData.forEach(group => {
-    const tagGroup = document.createElement('div');
-    tagGroup.className = 'tag-group';
-    tagGroup.setAttribute('data-tag', group.tag);
-  
-    const heading = document.createElement('h3');
-    heading.textContent = `#${group.tag}`;
-  
-    const artworksRow = document.createElement('div');
-    artworksRow.className = 'artworks-row';
-  
-    group.artworks.forEach(art => {
-      const img = document.createElement('img');
-      img.className = 'thumbnail';
-      img.alt = art.title;
-      img.dataset.full = `https://picsum.photos/seed/${Math.random().toString(36).substring(2, 7)}/600/400`;
-      img.dataset.title = art.title;
-      img.dataset.desc = art.description;
-      img.dataset.artist = art.artist;
-      img.src = img.dataset.full;
-  
-      img.addEventListener('click', () => {
-        modal.style.display = 'flex';
-        modal.setAttribute('aria-hidden', 'false');
-        modalImage.src = img.dataset.full;
-        modalImage.alt = img.dataset.title;
-        modalTitle.textContent = img.dataset.title;
-        modalDesc.textContent = img.dataset.desc;
-        modalArtist.textContent = img.dataset.artist;
-      });
-  
-      artworksRow.appendChild(img);
-    });
-  
-    tagGroup.appendChild(heading);
-    tagGroup.appendChild(artworksRow);
-    tagsContainer.appendChild(tagGroup);
-  });
-  
-  if (modalCloseBtn) {
-    modalCloseBtn.addEventListener('click', () => {
-      modal.style.display = 'none';
-      modal.setAttribute('aria-hidden', 'true');
-    });
-  }
-  
-  window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      modal.style.display = 'none';
-      modal.setAttribute('aria-hidden', 'true');
     }
-  });
-  
+];
+
+const tagsContainer = document.getElementById('Gallery');
+const modal = document.getElementById('Artwork-Modal');
+const modalCloseBtn = document.getElementById('Modal-Close');
+const modalImage = document.getElementById('Modal-Image');
+const modalTitle = document.getElementById('Modal-Title');
+const modalDesc = document.getElementById('Modal-Desc');
+const modalArtist = document.getElementById('Modal-Artist');
+
+tagsData.forEach(group => {
+	const artworkSection = document.createElement('section');
+	artworkSection.className = "artworks-section-container";
+	
+	// Title
+	const artworkTagName = document.createElement("h1");
+	artworkTagName.className = "section-title";
+	artworkTagName.textContent = `#${group.tag}`;
+
+	// Append title to section
+	artworkSection.appendChild(artworkTagName);
+
+	// Container of all the images on the section
+	const featuredArtworkContainer = document.createElement("div");
+	featuredArtworkContainer.className = "featured-artworks-container";
+
+	// Each image will be added
+	group.artworks.forEach(art => {
+		// Container of each image
+		const artworkContainer = document.createElement("div");
+		artworkContainer.className = "artwork-container";
+		
+		// The image
+		const img = document.createElement("img");
+		img.className = "artwork-image";
+		img.alt = art.title;
+		
+		const imageUrl = `/assets/artworks/${art.url}`;
+
+		// Images information
+		img.dataset.full = imageUrl;
+		img.dataset.title = art.title;
+		img.dataset.desc = art.description;
+		img.dataset.artist = art.artist;
+		img.src = imageUrl;
+
+		// Listener for modal popup
+		img.addEventListener('click', () => {
+			modal.style.display = 'flex';
+			modal.setAttribute('aria-hidden', 'false');
+			modalImage.src = img.dataset.full;
+			modalImage.alt = img.dataset.title;
+			modalTitle.textContent = img.dataset.title;
+			modalDesc.textContent = img.dataset.desc;
+			modalArtist.textContent = img.dataset.artist;
+			document.body.style.overflow = 'hidden';
+		});
+
+		// Artwork details container
+		const artworkDetails = document.createElement("div");
+		artworkDetails.className = "artwork-details";
+		artworkDetails.innerHTML = `${art.title}<br>${art.artist}`;
+
+		// Artwork likes container
+		const artworkLikes = document.createElement("div");
+		artworkLikes.className = "artwork-likes";
+
+		// Artwork likes count
+		const artworkLikesP = document.createElement("p");
+		artworkLikesP.textContent = art.likes;
+
+		// Artwork likes icon
+		const artworkLikesImg = document.createElement("img");
+		artworkLikesImg.src = "/assets/icons/like.png"
+
+		artworkLikes.appendChild(artworkLikesP);
+		artworkLikes.appendChild(artworkLikesImg);
+
+		artworkContainer.appendChild(artworkLikes);
+		artworkContainer.appendChild(artworkDetails);
+		artworkContainer.appendChild(img);
+		featuredArtworkContainer.appendChild(artworkContainer);
+	});
+
+	// Append the featuredArtworkContainer to the section
+	artworkSection.appendChild(featuredArtworkContainer);
+
+	// Append to the Main container (Gallery)
+	tagsContainer.appendChild(artworkSection);
+});
+
+if (modalCloseBtn) {
+  	modalCloseBtn.addEventListener('click', () => {
+		modal.style.display = 'none';
+		modal.setAttribute('aria-hidden', 'true');
+		document.body.style.overflow = '';
+  	});
+}
+
+window.addEventListener('click', (event) => {
+	if (event.target === modal) {
+		modal.style.display = 'none';
+		modal.setAttribute('aria-hidden', 'true');
+	}
+});

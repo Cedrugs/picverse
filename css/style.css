@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E2124;
+    gap: 4rem;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 13vh;
+    padding: 0 3rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Landing/Home Page */
+
+#Landing {
+    position: relative;
+    overflow: hidden;
+}
+
+.background-fade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}
+
+.logo {
+    font-weight: 600;
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+.logo:hover {
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.3);
+}
+
+.navbar-container {
+    display: flex;
+    gap: 3rem;
+    font-size: 16px;
+    border: white 2px solid;
+    border-radius: 99px;
+    padding: 1rem 3rem;
+}
+
+.navbar-container li {
+    list-style: none;
+}
+
+.navbar-container li a {
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+.navbar-container li a:hover, .navbar-active {
+    text-shadow: 0 0 1rem rgba(255, 255, 255, 0.6);
+}
+
+/* Hero Section */
+
+#Hero {
+    height: calc(100vh - 13vh);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.hero-slogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-artist {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.section-title {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+}
+
+.section-subtitle {
+    font-size: 32px;
+    font-weight: 500;
+    color: white;
+}
+
+.button {
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    padding: 1rem 4rem;
+    border: 2px solid white;
+    border-radius: 90px;
+    transition: all 300ms ease-in-out;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Trending Tags Section */
+
+#Trending-Tags {
+    display: flex;
+    margin: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.trending-tags-container {
+    display: flex;
+    gap: 20px;
+}
+
+/* Featured Artworks */
+
+.artworks-section-container {
+    display: flex;
+    margin: 5rem 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.featured-artworks-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.artwork-container {
+    position: relative;
+    transition: all 300ms ease-in-out;
+}
+
+.artwork-container:hover {
+    scale: 1.01;
+}
+
+.artwork-image {
+    display: block;
+    height: 277px;
+}
+
+.artwork-details {
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+.artwork-likes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    top: 88%;
+    left: 86%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 20px;
+    text-align: left;
+}
+
+/* Gallery Page */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    top: 0; left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.75);
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    backdrop-filter: blur(8px);
+}
+
+.modal[aria-hidden="false"] {
+    display: flex;
+}
+
+.modal-content {
+    background: #fff;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem 1.5rem 2rem;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+}
+
+#Modal-Close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border: none;
+    background: none;
+    font-size: 2rem;
+    line-height: 1;
+    cursor: pointer;
+    color: #333;
+}
+
+#Modal-Image {
+    width: 100%;
+    max-height: 400px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+}
+
+#Modal-Title {
+    margin-bottom: 0.5rem;
+}
+
+#Modal-Desc {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+/* Submission */
+
+#Submission {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.artwork-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.artwork-form-container {
+    display: flex;
+    flex-direction: row;
+    padding: 4rem;
+    gap: 2rem;
+    justify-content: space-evenly;
+    border: 2px solid white;
+    border-radius: 50px;
+    max-width: 65rem;
+}
+
+.artwork-div {
+    display: flex;
+    gap: 0.5rem;
+    flex-direction: column;
+}
+
+.artwork-form-container label, legend {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.artwork-form-container input[type="text"],
+.artwork-form-container input[type="email"],
+.artwork-form-container input[type="file"],
+.artwork-form-container textarea {
+    width: 100%;
+    padding: 15px 20px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    resize: vertical;
+    color: white;
+}
+
+.artwork-form-container fieldset {
+    margin: 15px 0;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 25px;
+}
+
+/* Form message */
+#Form-Message {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+footer p {
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}

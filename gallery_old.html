@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Picverse - Gallery</title>
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/mediaqueries.css">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a href="" class="navbar-logo">
+        <img src="/assets/images/logo.png" alt="Logo">
+        <div class="logo">Picverse</div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html" class="active">Gallery</a></li>
+        <li><a href="submission.html">Submit</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="about.html">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="tags-section">
+      <h2>Explore Tags</h2>
+      <div class="tags-container" id="tagsContainer"></div>
+    </section>
+
+    <div id="artwork-modal" class="modal" aria-hidden="true">
+      <div class="modal-content">
+        <button id="modal-close">&times;</button>
+        <img id="modal-image" src="" alt="" />
+        <h3 id="modal-title"></h3>
+        <p id="modal-desc"></p>
+        <p><strong>Artist:</strong> <span id="modal-artist"></span></p>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2025 Picverse Community. All rights reserved.</p>
+  </footer>
+
+  <script src="js/gallery.js"></script>
+</body>
+</html>

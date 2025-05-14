@@ -1,49 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Picverse - Gallery</title>
-  <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <a href="" class="navbar-logo">
-        <img src="/assets/images/logo.png" alt="Logo">
-        <div class="logo">Picverse</div>
-      </a>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html" class="active">Gallery</a></li>
-        <li><a href="submission.html">Submit</a></li>
-        <li><a href="community.html">Community</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+        <a class="logo" href="/index.html">Picverse</a>
+        <nav>
+            <ul class="navbar-container">
+                <li><a href="/index.html">Home</a></li>
+                <li><a class="navbar-active" href="/gallery.html">Gallery</a></li>
+                <li><a href="/submission.html">Submit</a></li>
+                <li><a href="/community.html">Community</a></li>
+                <li><a href="/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  <main>
-    <section id="tags-section">
-      <h2>Explore Tags</h2>
-      <div class="tags-container" id="tagsContainer"></div>
-    </section>
+    <main id="Gallery">
+        <!-- Will be filled by the gallery.js -->
+    </main>
 
-    <div id="artwork-modal" class="modal" aria-hidden="true">
-      <div class="modal-content">
-        <button id="modal-close">&times;</button>
-        <img id="modal-image" src="" alt="" />
-        <h3 id="modal-title"></h3>
-        <p id="modal-desc"></p>
-        <p><strong>Artist:</strong> <span id="modal-artist"></span></p>
-      </div>
+    <div id="Artwork-Modal" aria-hidden="true" role="dialog" aria-modal="true" class="modal">
+        <div class="modal-content">
+            <button id="Modal-Close" aria-label="Close modal">&times;</button>
+            <img id="Modal-Image" src="" alt="" />
+            <h2 id="Modal-Title"></h2>
+            <p id="Modal-Desc"></p>
+            <p><strong>Artist: </strong><span id="Modal-Artist"></span></p>
+        </div>
     </div>
-  </main>
-
-  <footer>
-    <p>© 2025 Picverse Community. All rights reserved.</p>
-  </footer>
-
-  <script src="js/gallery.js"></script>
+    <footer>
+        <p>© 2025 Picverse. All rights reserved.</p>
+    </footer>
+    <script src="/js/gallery.js"></script>
 </body>
 </html>

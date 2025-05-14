@@ -8,7 +8,7 @@
 }
 
 html, body {
-    height: 100%;
+    min-height: 100vh;
 }
 
 * {
@@ -91,6 +91,8 @@ main {
     padding: 20px;
     max-width: 1200px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 
 #hero {
@@ -99,6 +101,7 @@ main {
     background-size: cover;
     background-position: center;
     overflow: hidden;
+    border-radius: 5px;
 }
 
 .hero-overlay {
@@ -299,50 +302,49 @@ main {
 }
 
 .submission-form-section fieldset {
-margin: 15px 0;
-border: 1px solid #ccc;
-padding: 10px 15px;
-border-radius: 5px;
+    border: 2px solid white;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 
 .submission-form-section button[type="submit"] {
-background-color: #f04e30;
-color: white;
-font-weight: bold;
-padding: 12px 20px;
-border: none;
-border-radius: 6px;
-cursor: pointer;
-width: 100%;
-font-size: 1rem;
+    background-color: #f04e30;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 1rem;
 }
 
 .submission-form-section button[type="submit"]:hover {
-background-color: #c43b24;
+    background-color: #c43b24;
 }
 
 /* Form message */
 #form-message {
-margin-top: 15px;
-font-weight: bold;
+    margin-top: 15px;
+    font-weight: bold;
 }
 
 /* Community Page */
 
 #forum-discussions ul,
 #recent-activities ul {
-list-style-type: none;
-margin: 15px 0 30px;
-padding-left: 0;
+    list-style-type: none;
+    margin: 15px 0 30px;
+    padding-left: 0;
 }
 
 #forum-discussions li,
 #recent-activities li {
-padding: 10px 15px;
-background: white;
-margin-bottom: 10px;
-border-radius: 8px;
-box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+    padding: 10px 15px;
+    background: white;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
 }
 
 #forum-discussions li strong {
@@ -364,93 +366,46 @@ box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
 }
 
 .user-card {
-background: white;
-width: 150px;
-padding: 10px;
-border-radius: 10px;
-text-align: center;
-box-shadow: 0 1px 6px rgba(0,0,0,0.1);
+    background: white;
+    width: 150px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.1);
 }
 
 .user-card img {
-width: 80px;
-height: 80px;
-border-radius: 50%;
-object-fit: cover;
-margin-bottom: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
 }
 
 .user-card h3 {
-font-size: 1.1rem;
-margin-bottom: 5px;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
 }
 
 .user-card p {
-font-size: 0.85rem;
-color: #666;
+    font-size: 0.85rem;
+    color: #666;
 }
 
 /* About Page */
 .about-section {
-background: white;
-padding: 30px;
-border-radius: 12px;
-max-width: 900px;
-margin: 30px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    max-width: 900px;
+    margin: 30px auto;
 }
 
 .about-section ul {
-margin-top: 10px;
-padding-left: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
 }
 
 .about-section ul li {
-margin-bottom: 8px;
-}
-
-/* Responsive */
-
-@media screen and (max-width: 768px) {
-/* Navbar changes */
-.nav-links {
-    flex-direction: column;
-    gap: 8px;
-    background:#222;
-    padding: 10px 15px;
-}
-
-main {
-    padding: 15px;
-}
-
-#hero {
-    height: 250px;
-}
-.hero-overlay .slogan {
-    font-size: 1.6rem;
-}
-.hero-overlay .artist-name {
-    font-size: 1rem;
-}
-
-.artworks-grid,
-.users-grid {
-    flex-direction: column;
-    align-items: center;
-}
-
-.artwork-card,
-.user-card {
-    width: 80%;
-}
-
-.tags-list {
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.artworks-row {
-    overflow-x: scroll;
-    gap: 10px;
-}
+    margin-bottom: 8px;
 }
