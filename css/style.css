@@ -338,6 +338,146 @@ main {
     border-radius: 25px;
 }
 
+/* About Us */
+
+#About-Us {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    margin: 5rem 0;
+}
+
+.about-us-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto;
+    gap: 5rem;
+    max-width: 65rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 50px;
+    padding: 4rem;
+}
+
+.about-us-title {
+    font-size: 32px;
+    color: white;
+    font-weight: 600;
+}
+
+.about-us-container .about-us-item:nth-child(1) {
+    grid-column: 1 / 3;
+}
+
+.about-us-text {
+    font-size: 20px;
+    color: white;
+}
+
+/* Community */
+
+#Active-Forum-Discussions {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.forum-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1rem 1.7rem;
+    min-width: 55rem;
+}
+
+.forum-likes {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.forum-likes img {
+    height: 32px;
+    margin-top: 2px;
+}
+
+.forum-details h2, .forum-details p,
+.forum-likes h2 {
+    color: white;
+}
+
+.forum-details h2, .forum-likes h2 {
+    font-weight: 550;
+}
+
+#Recent-Activities {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.activity-details h2 {
+    color: white;
+    font-weight: 500;
+}
+
+#Active-Users {
+    display: flex;
+    flex-direction: column;
+    margin: 5rem 0;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+#Active-Users-Container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.user-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 25px;
+    padding: 1rem 1.7rem;
+    min-width: 17rem;
+}
+
+.user-details {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.user-details img {
+    height: 25px;
+}
+
+.user-details h2 {
+    font-weight: 500;
+}
+
 /* Form message */
 #Form-Message {
     font-size: 20px;

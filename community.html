@@ -1,120 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Picverse - Community</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <link rel="stylesheet" href="css/mediaqueries.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Community</title>
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="logo">Picverse</div>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="submission.html">Submit</a></li>
-        <li><a href="community.html" class="active">Community</a></li>
-        <li><a href="about.html">About Us</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <main>
-    <section id="forum-discussions">
-      <h2>Active Forum Discussions</h2>
-      <ul>
-        <li>
-          <strong>How to improve digital painting?</strong>
-          <p>by artist123 | 12 replies | Apr 10, 2025</p>
-        </li>
-        <li>
-          <strong>Best tools for sci-fi art creation</strong>
-          <p>by futurist | 8 replies | Apr 15, 2025</p>
-        </li>
-        <li>
-          <strong>Community critique for my latest work</strong>
-          <p>by amy.art | 20 replies | Apr 16, 2025</p>
-        </li>
-        <li>
-          <strong>Organizing virtual art jams</strong>
-          <p>by creativeSam | 5 replies | Apr 17, 2025</p>
-        </li>
-      </ul>
-    </section>
-
-    <section id="recent-activities">
-      <h2>Recent Activity</h2>
-      <ul>
-        <li>Forum created: "How to improve digital painting?"</li>
-        <li>New follower: @amy.art started following you</li>
-        <li>Comment added to "Best tools for sci-fi art creation"</li>
-        <li>Forum created: "Community critique for my latest work"</li>
-      </ul>
-    </section>
-
-    <section id="active-users">
-      <h2>Active Users</h2>
-      <div class="users-grid">
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of artist123" />
-          <h3>artist123</h3>
-          <p>Digital painter and illustrator</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of futurist" />
-          <h3>futurist</h3>
-          <p>Sci-fi enthusiast and modeler</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of amy.art" />
-          <h3>amy.art</h3>
-          <p>Portrait artist and hobbyist</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of creativeSam" />
-          <h3>creativeSam</h3>
-          <p>Community organizer & artist</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of pixelMaster" />
-          <h3>pixelMaster</h3>
-          <p>Pixel artist and animator</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of colorWave" />
-          <h3>colorWave</h3>
-          <p>Color theory expert</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of brushKing" />
-          <h3>brushKing</h3>
-          <p>Brush technique specialist</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of nightOwl" />
-          <h3>nightOwl</h3>
-          <p>Late night creator</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of vectorQueen" />
-          <h3>vectorQueen</h3>
-          <p>Vector art lover</p>
-        </div>
-        <div class="user-card">
-          <img src="https://placehold.co/150x150" alt="Profile pic of sketchGuru" />
-          <h3>sketchGuru</h3>
-          <p>Sketch and shading</p>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <p>© 2025 Picverse Community. All rights reserved.</p>
-  </footer>
-
-  <script src="js/scripts.js"></script>
+    <header>
+        <a class="logo" href="/index.html">Picverse</a>
+        <nav>
+            <ul class="navbar-container">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/gallery.html">Gallery</a></li>
+                <li><a href="/submission.html">Submit</a></li>
+                <li><a class="navbar-active" href="/community.html">Community</a></li>
+                <li><a href="/about.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section id="Active-Forum-Discussions">
+            <h1 class="section-title">Active Forum Discussions</h1>
+            <!-- Will be filled by community.js -->
+        </section>
+        <section id="Recent-Activities">
+            <h1 class="section-title">Recent Activities</h1>
+            <!-- Will be filled by community.js -->
+        </section>
+        <section id="Active-Users">
+            <h1 class="section-title">Active Users</h1>
+            <div id="Active-Users-Container">
+                <!-- Will be filled by community.js -->
+            </div>
+        </section>
+    <footer>
+        <p>© 2025 Picverse. All rights reserved.</p>
+    </footer>
+    <script src="/js/community.js"></script>
 </body>
-</html> 
+</html>
