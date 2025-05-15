@@ -132,6 +132,7 @@ main {
     border-radius: 90px;
     transition: all 300ms ease-in-out;
     cursor: pointer;
+    text-align: center;
 }
 
 .button:hover {
@@ -151,7 +152,8 @@ main {
 }
 
 .trending-tags-container {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
     gap: 20px;
 }
 
@@ -185,7 +187,8 @@ main {
 
 .artwork-image {
     display: block;
-    height: 277px;
+    height: auto;
+    max-width: 400px;
 }
 
 .artwork-details {
@@ -234,44 +237,44 @@ main {
 }
 
 .modal-content {
-    background: #fff;
     max-width: 700px;
     width: 100%;
-    border-radius: 10px;
     overflow: hidden;
     padding: 1rem 1.5rem 2rem;
     box-sizing: border-box;
     position: relative;
-    text-align: center;
+    text-align: left;
 }
 
 #Modal-Close {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 20px;
+    right: 35px;
     border: none;
     background: none;
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 1;
     cursor: pointer;
-    color: #333;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 #Modal-Image {
     width: 100%;
     max-height: 400px;
     object-fit: cover;
-    border-radius: 6px;
-    margin-bottom: 1rem;
+}
+
+#Modal-Title, #Modal-Desc, #Modal-Artist {
+    color: white;
 }
 
 #Modal-Title {
-    margin-bottom: 0.5rem;
+    margin-top: 10px;
 }
 
 #Modal-Desc {
-    margin-bottom: 1rem;
-    color: #555;
+    margin-bottom: 5px;
 }
 
 /* Submission */
@@ -332,9 +335,9 @@ main {
 }
 
 .artwork-form-container fieldset {
-    margin: 15px 0;
+    margin: 10px 0;
     border: 2px solid white;
-    padding: 10px 15px;
+    padding: 15px 30px;
     border-radius: 25px;
 }
 
@@ -347,6 +350,11 @@ main {
     align-items: center;
     min-height: 50vh;
     margin: 5rem 0;
+}
+
+.about-us-item {
+    display: flex;
+    flex-direction: column;
 }
 
 .about-us-container {

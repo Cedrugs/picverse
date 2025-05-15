@@ -1,0 +1,301 @@
+/* Tablet Size - 768px */
+@media screen and (max-width: 1600px) {
+    /* Artworks & Trending tags */
+
+    .trending-tags-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .featured-artworks-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #Active-Users-Container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    /* About Us */
+
+    #About-Us {
+        padding: 5rem;
+    }
+    
+    .section-title {
+        font-size: 42px;
+    }
+
+    .about-us-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        padding: 3rem;
+    }
+
+    .about-us-text {
+        font-size: 16px;
+        text-wrap: wrap;
+    }
+
+    .about-us-title {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .section-title {
+        font-size: 32px;
+        text-wrap: wrap;
+        text-align: center;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    #Active-Forum-Discussions {
+        padding: 0 ;
+    }
+
+    header .logo {
+        font-size: 32px;
+    }
+
+    nav li {
+        font-size: 14px;
+    }
+
+    .navbar-container {
+        gap: 1rem;
+    }
+
+    .trending-tags-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .featured-artworks-container {
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .artwork-image {
+        height: 150px;
+    }
+
+    .artwork-details {
+        left: 25%;
+        font-size: 14px;
+    }
+
+    .artwork-likes {
+        font-size: 14px;
+        left: 80%;
+    }
+
+    .artwork-likes img {
+        margin-bottom: 4px;
+        height: 25px;
+    }
+
+
+    /* Community */
+
+    .forum-container {
+        min-width: 27rem;   
+    }
+
+    .forum-likes h2 {
+        margin-top: 5px;
+    }
+
+    .forum-details h2 {
+        font-size: 14px;
+    }
+
+    .forum-details p {
+        font-size: 12px;
+    }
+
+    .forum-likes h2 {
+        font-size: 16px;
+    }
+
+    .activity-details h2 {
+        font-size: 14px;
+    }
+
+    #Active-Users-Container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .user-container {
+        min-width: 4rem;
+    }
+
+    /* Submission */
+
+    .artwork-form-container {
+        padding: 3rem;
+    }
+
+    .artwork-div label, legend {
+        font-size: 14px;
+    }
+
+    .artwork-form-container input[type="text"],
+    .artwork-form-container input[type="email"],
+    .artwork-form-container input[type="file"],
+    .artwork-form-container textarea {
+        width: 100%;
+        padding: 10px 15px;
+        border: 2px solid white;
+        background-color: transparent;
+        border-radius: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        resize: vertical;
+        color: white;
+        font-size: 14px;
+    }
+
+    .artwork-form-container fieldset {
+        margin: 15px 0;
+        border: 2px solid white;
+        padding: 5px 30px;
+        border-radius: 25px;
+    }
+
+    /* About Us */
+
+    .about-us-text {
+        font-size: 14px;
+    }
+}
+
+/* Mobile Size - 320px */
+
+@media screen and (max-width: 420px) {
+    .forum-container {
+        min-width: 12rem !important;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .button {
+        padding: 10px 30px;
+        font-size: 16px;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 24px;
+    }
+
+    .section-subtitle {
+        display: flex;
+        text-align: center;
+        font-size: 12px;
+    }
+
+    .navbar-container {
+        display: none;
+    }
+
+    .featured-artworks-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trending-tags-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .artworks-section-container {
+        margin: 1rem 0;
+    }
+
+    #Trending-Tags {
+        margin: 0 0;
+    }
+    
+    /* Submissiom */
+
+    #Submission {
+        margin: 0 0;
+        padding: 4rem;
+    }
+
+    .artwork-form-container {
+        flex-direction: column;
+        padding: 2rem;
+        border-radius: 25px;
+    }
+
+    /* Community */
+
+    #Active-Forum-Discussions {
+        margin: 0 0;
+        padding: 2rem;
+    }
+
+    #Recent-Activities {
+        margin: 0 0;
+        padding: 2rem;
+    }
+
+    #Active-Users {
+        margin: 0 0;
+    }
+
+    .forum-container {
+        min-width: 22rem;
+    }
+
+    .forum-details h2, .forum-details p,
+    .forum-likes h2 {
+        font-size: 12px;
+    }
+
+    .activity-details {
+        flex-wrap: wrap;
+    }
+
+    .activity-details h2 {
+        font-size: 12px;
+    }
+
+    #Active-Users-Container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /* About Us */
+
+    #About-Us {
+        padding: 1.5rem;
+    }
+
+    .about-us-container {
+        padding: 2rem;
+    }
+
+    .about-us-text {
+        font-size: 12px;
+    }
+
+    .about-us-title {
+        font-size: 14px;
+    }
+
+    /* Footer Text */
+
+    footer {
+        text-align: center;
+    }
+}

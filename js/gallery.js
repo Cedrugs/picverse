@@ -241,7 +241,7 @@ tagsData.forEach(group => {
 			modalImage.alt = img.dataset.title;
 			modalTitle.textContent = img.dataset.title;
 			modalDesc.textContent = img.dataset.desc;
-			modalArtist.textContent = img.dataset.artist;
+			modalArtist.textContent = `by ${img.dataset.artist}`;
 			document.body.style.overflow = 'hidden';
 		});
 
@@ -290,5 +290,6 @@ window.addEventListener('click', (event) => {
 	if (event.target === modal) {
 		modal.style.display = 'none';
 		modal.setAttribute('aria-hidden', 'true');
+        document.body.style.overflow = '';
 	}
 });
