@@ -62,7 +62,7 @@
         padding: 0 ;
     }
 
-    header .logo {
+    .logo {
         font-size: 32px;
     }
 
@@ -178,15 +178,12 @@
     }
 }
 
-/* Mobile Size - 320px */
-
-@media screen and (max-width: 420px) {
-    .forum-container {
-        min-width: 12rem !important;
-    }
-}
-
+/* Mobile Size - 320px-767px */
 @media screen and (max-width: 767px) {
+    .logo {
+        font-size: 24px;
+    }
+
     .button {
         padding: 10px 30px;
         font-size: 16px;
@@ -205,6 +202,10 @@
 
     .navbar-container {
         display: none;
+    }
+
+    #HamburgerNav {
+        display: flex;
     }
 
     .featured-artworks-container {
@@ -297,5 +298,15 @@
 
     footer {
         text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .logo {
+        font-size: 20px;
+    }
+    
+    .forum-container {
+        min-width: 12rem !important;
     }
 }

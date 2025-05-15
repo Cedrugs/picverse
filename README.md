@@ -24,12 +24,12 @@ Picverse allows users to upload and share images with a community. The applicati
 ## Screenshots
 
 1.  **Home Page:**
-    ![Home Page Screenshot](https://storage.googleapis.com/cdn-gcs.samuelcedric.com/picverse/screenshots/home.png)
+    ![Home Page Screenshot](https://cdn-gcs.samuelcedric.com/picverse/screenshots/home.png)
 2.  **Gallery:**
-    ![Gallery Screenshot](https://storage.googleapis.com/cdn-gcs.samuelcedric.com/picverse/screenshots/gallery.png)
+    ![Gallery Screenshot](https://cdn-gcs.samuelcedric.com/picverse/screenshots/gallery.png)
 3.  **Submission:**
-    ![Submission Screenshot](https://storage.googleapis.com/cdn-gcs.samuelcedric.com/picverse/screenshots/submission.png)
+    ![Submission Screenshot](https://cdn-gcs.samuelcedric.com/picverse/screenshots/submission.png)
 4.  **Community:**
-    ![Community Screenshot](https://storage.googleapis.com/cdn-gcs.samuelcedric.com/picverse/screenshots/community.png)
+    ![Community Screenshot](https://cdn-gcs.samuelcedric.com/picverse/screenshots/community.png)
 5.  **About Us:**
-    ![About Us Screenshot](https://storage.googleapis.com/cdn-gcs.samuelcedric.com/picverse/screenshots/about-us.png)
+    ![About Us Screenshot](https://cdn-gcs.samuelcedric.com/picverse/screenshots/about-us.png)

@@ -9,16 +9,26 @@
 </head>
 <body>
     <header>
-        <a class="logo" href="/index.html">Picverse</a>
-        <nav>
-            <ul class="navbar-container">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/gallery.html">Gallery</a></li>
-                <li><a class="navbar-active" href="/submission.html">Submit</a></li>
-                <li><a href="/community.html">Community</a></li>
-                <li><a href="/about.html">About Us</a></li>
-            </ul>
-        </nav>
+        <div class="navbars-container" id="Navbars-Container">
+            <a class="logo" href="/index.html">Picverse</a>
+            <nav id="NormalNav">
+                <ul class="navbar-container">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    <li><a class="navbar-active" href="/submission.html">Submit</a></li>
+                    <li><a href="/community.html">Community</a></li>
+                    <li><a href="/about.html">About Us</a></li>
+                </ul>
+            </nav>
+            <nav id="HamburgerNav">&#9776;</nav>
+        </div>
+        <ul id="Hamburger-Nav-Container" class="hamburger-nav-container">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/gallery.html">Gallery</a></li>
+            <li><a href="/submission.html">Submit</a></li>
+            <li><a href="/community.html">Community</a></li>
+            <li><a href="/about.html">About Us</a></li>
+        </ul>
     </header>
     <section id="Submission">
         <h1 class="section-title">Submit Your Artwork</h1>
@@ -61,5 +71,6 @@
         <p>© 2025 Picverse. All rights reserved.</p>
     </footer>
     <script src="/js/submission.js"></script>
+    <script src="/js/navbar.js"></script>
 </body>
 </html>
